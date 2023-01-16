@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #FBDA61;
+            background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+        }
+
+        .wrapper {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            padding: 40px;
+            background-color: white;
+            width: 400px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            background-color: #f8f8f8;
+            outline: none;
+            font-size: 20px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        input:focus {
+            box-shadow: 0 1px 7px #00000059;
+            background: white;
+        }
+
+        input:not(.inline-input) {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        input.inline-input {
+            width: 49%;
+        }
+
+        #firstname {
+            border-radius: 15px 0 0 15px;
+        }
+
+        #lastname {
+            border-radius: 0 15px 15px 0;
+        }
+
+        h1 {
+            margin: 15px 0;
+        }
+
+        h5 {
+            margin-top: 0;
+        }
+
+        input[type="submit"] {
+            background-color: #4895f9;
+            color: white;
+        }
+
+        a {
+            color: #4895f9;
+        }
+        a:visited{
+            color: #8e4dac;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h1>Create Account</h1>
+            <h5>Already have an account? <a href="/">Sign in</a></h5>
+            <form action="">
+                <input type="text" id="username" name="username" placeholder="User Name">
+                <input type="text" id="firstname" class="inline-input" name="firstname" placeholder="First Name">
+                <input type="text" id="lastname" class="inline-input" name="lastname" placeholder="Last Name">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <input type="submit" value="Sign Up" id="signup">
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
